@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>REST tester</title>
+    <style>
+    h2 {
+        color: blue;
+    }
+    section {
+        border: 1px solid black;
+        padding: 0 2em 1em;
+    }
+    label {
+        float: left;
+        width: 11em;
+        text-align: right;
+    }
+    input {
+        margin-left: 1em;
+        margin-bottom: .5em;
+    }
+    span {
+        color: red;
+    }
+    
+    </style>
+</head>
+<body>
+    <H2>Forum web service Tester</H2>
+    <section>
+        <a href="rest/questions">List Questions</a>
+    </section>
+    <section>
+        <form action="rest/questions" method="post">
+            <h3>Add a Question</h3>
+	        <label>Question text:</label> 
+		    <input type="text" name="question">
+		    <span>*</span><br/>
+		    
+		    <label>User ID:</label>
+		    <input type="text" name="userId">
+	        <span>*</span><br/>
+	        
+	        <label>&nbsp;</label>
+	        <input type="submit" value="Submit">
+        </form> 
+    </section>
+       
+</body>
+</html>
